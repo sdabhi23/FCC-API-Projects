@@ -19,8 +19,10 @@ app.get("/", function (req, res) {
 });
 
 
-// your first API endpoint... 
-app.get("/api/whoami", (req, res) => res.json({"ipaddress":req.headers['x-forwarded-for'].split(',')[0], "language": req.headers['accept-language'], "software": req.headers['user-agent']}));
+app.get("/api/timestamp/:time", (req, res) => {
+  var data = new Date(req.params.time);
+  res.json({"unix": data.getTime(), "utc": data.toUTCString()});
+});
 
 
 
