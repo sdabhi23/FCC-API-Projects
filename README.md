@@ -16,4 +16,5 @@ e.g. `{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29 GMT"}`.
 * https://sdabhi23-timestamp-ms.glitch.me/api/timestamp/1450137600000
 
 #### Example output:
-* { "unix": 1450137600, "natural": "December 15, 2015" }
+* {"unix":1450137600000,"utc":"Tue, 15 Dec 2015 00:00:00 GMT"}
+* {"unix":null,"utc":"Invalid Date"}
